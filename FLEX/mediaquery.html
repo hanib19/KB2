@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: auto;
+        background-color: hsl(180, 100%, 50%);
+      }
+      .box {
+        flex: 1;
+        font-size: 1em;
+        min-width: 300px;
+        background-color: green;
+        padding: 10px;
+        color: white;
+        text-align: justify;
+      }
+      /* Règles pour viewport >= 480 pixels */
+      @media screen and (min-width: 480px) {
+        .box {
+          font-size: 1.5em;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et accusantium
+        officia aliquam porro maiores praesentium, a doloribus reprehenderit ab
+        veritatis?
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid ea,
+        tempora pariatur eos quisquam reiciendis.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+        reiciendis necessitatibus consequatur quibusdam tempora cum.
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus
+        enim voluptates dolorem laudantium accusantium dignissimos eum
+        praesentium mollitia quos libero explicabo laboriosam quod sunt id
+        incidunt, doloremque, tenetur minus labore!
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ducimus
+        non ullam provident, quo, laborum accusamus reprehenderit excepturi
+        accusantium sunt quidem nesciunt tempore iste sapiente dolorem nemo
+        mollitia, distinctio nihil!
+      </div>
+      <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus tempore
+        sequi necessitatibus atque nulla aliquid explicabo provident eius
+        nostrum placeat!
+      </div>
+    </div>
+  </body>
+</html>

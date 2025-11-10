@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .center {
+            position: fixed;
+            left: 110px;
+            top: 110px;
+            width: calc(100% - 220px);
+            height: calc(100% - 220px);
+            background-color: lightgrey;
+            font-size: 40px;
+            text-align: justify;
+            overflow-y: scroll;
+        }
+
+        .alignCenter {
+            display: table;
+            text-align: center;
+        }
+
+        h1 {
+            display: table-cell;
+            vertical-align: middle;
+        }
+
+        .leftSide {
+            position: fixed;
+            left: 10px;
+            top: 10px;
+            height: calc(100% - 120px);
+            width: 100px;
+            background-color: green;
+        }
+
+        .topSide {
+            position: fixed;
+            left: 110px;
+            top: 10px;
+            height: 100px;
+            width: calc(100% - 120px);
+            background-color: orange;
+        }
+
+        .bottomSide {
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+            width: calc(100% - 120px);
+            height: 100px;
+            background-color: red;
+        }
+
+        .rightSide {
+            position: fixed;
+            top: 110px;
+            right: 10px;
+            width: 100px;
+            height: calc(100% - 120px);
+            background-color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="leftSide alignCenter">
+        <h1>Left</h1>
+    </div>
+    <div class="topSide alignCenter">
+        <h1>Top</h1>
+    </div>
+    <div class="rightSide alignCenter">
+        <h1>Right</h1>
+    </div>
+    <div class="bottomSide alignCenter">
+        <h1>Bottom</h1>
+    </div>
+    <div class="center">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+        ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Duis aute irure dolor in reprehenderit in voluptate velit
+        esse cillum dolore eu fugiat nulla pariatur. Excepteur
+        sint occaecat cupidatat non proident, sunt in culpa qui
+        officia deserunt mollit anim id est laborum.
+    </div>
+</body>
+
+</html>

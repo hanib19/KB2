@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        /* Utilisez uniquement les classes en place. N'ajoutez pas de nouvelles classes */
+
+
+        /* décommentez temporairement pour reconnaitre les différentes sections*/
+        /*
+        div {
+            border: 1px solid red;
+        }
+        */
+
+        /* Complétez les classes suivantes */
+        .main {
+            /* ne pas modifier */
+            width: 1100px;
+            margin: auto;
+        }
+
+        .banner {
+            /* ne pas modifier */
+            display: grid;
+            grid-template-columns: 60px auto;
+            background-image: linear-gradient(180deg, black, gray);
+            padding: 10px;
+            border-top-left-radius: 16px;
+            border-top-right-radius: 16px;
+        }
+
+        .bottom-banner {
+            /* ne pas modifier */
+            height: 30px;
+            background-image: linear-gradient(180deg, gray, black);
+            border-bottom-left-radius: 16px;
+            border-bottom-right-radius: 16px;
+        }
+
+        .logo {
+            /* ne pas modifier */
+            width: 50px;
+        }
+
+        .enterprise {
+            /* ne pas modifier */
+            font-family: Impact, sans-serif;
+            font-size: 40px;
+            color: darkgray
+        }
+
+        .graph-container {
+            /* ne pas modifier */
+            display: flex;
+            flex-direction: column;
+            padding-top: 20px;
+        }
+
+        .section {
+            /* ne pas modifier */
+            padding: 20px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+        }
+
+        .graphs {
+            column-gap: 50px;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr); 
+        }
+
+        .graph {
+            /* ne pas modifier */
+            margin: 0px;
+        }
+
+        .blue {
+
+            background-color: blue;
+        }
+
+        .red {
+
+            background-color: red;
+        }
+
+        .orange {
+
+            background-color: orange;
+        }
+
+        .green {
+
+            background-color: green;
+        }
+
+        .bars {
+            height: 470px;
+            align-items: end;
+            column-gap: 16px;
+            margin-bottom: 20px;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        .bar {
+            border-top-right-radius: 20px;
+            border-top-left-radius: 20px;
+
+        }
+
+        .graph-title {
+            text-align: center;
+            font-size: 50px;
+            font-weight: bolder;
+        }
+
+        .branch {
+            font-weight: bolder;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .legend {
+            align-items: center;
+            display: grid;
+            grid-template-columns: 40px auto;
+        }
+
+        .sample {
+            margin: 10px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .label {  /* ne pas modifier */
+            font-weight: bolder;
+        }
+
+        .best-seller-label {  /* ne pas modifier */
+            font-size: 20px;
+        }
+
+        .gray-border {
+            border: 3px solid gray;
+            border-radius: 8px;
+        }
+
+        .graph-header {
+            column-gap: 20px;
+            display: grid;
+            grid-template-columns: auto 90px;
+        }
+
+        .best-seller-container {
+            align-items: center;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: 220px auto;
+        }
+
+        .best-seller-branch {  /* ne pas modifier */
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+        .best-seller-border {
+            border: 3px dotted white;
+            border-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body> <!-- Il est strictement défendu de modifier cette portion -->
+    <div class="main">
+        <div class="banner">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/3/33/Vanamo_Logo.png" alt="logo">
+            <div class="enterprise">Ink Experts</div>
+        </div>
+        <div class="section">
+            <div class="graph-title">Ventes par succursales</div>
+            <hr>
+            <div class="graph-container">
+                <div class="graph-header">
+                    <div class="best-seller-container gray-border">
+                        <div class="best-seller-label">
+                            Meilleur vendeur 2021 :
+                        </div>
+                        <div class="best-seller-branch">
+                            Laval
+                        </div>
+                        <div class="best-seller-label">
+                            Meilleur vendeur 2022 :
+                        </div>
+                        <div class="best-seller-branch">
+                            Montréal
+                        </div>
+                        <div class="best-seller-label">
+                            Meilleur vendeur 2023 :
+                        </div>
+                        <div class="best-seller-branch">
+                            Brossard
+                        </div>
+                        <div class="best-seller-label">
+                            Meilleur vendeur 2024 :
+                        </div>
+                        <div class="best-seller-branch">
+                            Brossard
+                        </div>
+                    </div>
+                    <div class="legend gray-border">
+                        <div class="sample blue"></div>
+                        <div class="label">2021</div>
+                        <div class="sample red"></div>
+                        <div class="label">2022</div>
+                        <div class="sample orange"></div>
+                        <div class="label">2023</div>
+                        <div class="sample green"></div>
+                        <div class="label">2024</div>
+                    </div>
+                </div>
+                <div class="graphs">
+                    <div class="graph">
+                        <div class="bars">
+                            <div class="bar blue" style="height:30%"></div>
+                            <div class="bar red best-seller-border" style="height:60%"></div>
+                            <div class="bar orange" style="height:40%"></div>
+                            <div class="bar green" style="height:70%"></div>
+                        </div>
+                        <div class="branch">Montréal</div>
+                    </div>
+                    <div class="graph">
+                        <div class="bars">
+                            <div class="bar blue best-seller-border" style="height:40%"></div>
+                            <div class="bar red" style="height:50%"></div>
+                            <div class="bar orange " style="height:40%"></div>
+                            <div class="bar green" style="height:60%"></div>
+                        </div>
+                        <div class="branch">Laval</div>
+                    </div>
+                    <div class="graph">
+                        <div class="bars">
+                            <div class="bar blue" style="height:10%"></div>
+                            <div class="bar red" style="height:50%"></div>
+                            <div class="bar orange best-seller-border" style="height:80%"></div>
+                            <div class="bar green best-seller-border" style="height:90%"></div>
+                        </div>
+                        <div class="branch">Brossard</div>
+                    </div>
+                    <div class="graph">
+                        <div class="bars">
+                            <div class="bar blue" style="height:20%"></div>
+                            <div class="bar red" style="height:30%"></div>
+                            <div class="bar orange" style="height:40%"></div>
+                            <div class="bar green" style="height:20%"></div>
+                        </div>
+                        <div class="branch">Sherbrooke</div>
+                    </div>
+                    <div class="graph">
+                        <div class="bars">
+                            <div class="bar blue" style="height:40%"></div>
+                            <div class="bar red" style="height:50%"></div>
+                            <div class="bar orange" style="height:30%"></div>
+                            <div class="bar green" style="height:20%"></div>
+                        </div>
+                        <div class="branch">Québec</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="bottom-banner"></div>
+    </div>
+</body>
+
+</html>

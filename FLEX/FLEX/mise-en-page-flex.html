@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinations</title>
+    <style>
+        :root {
+            --padding: 10px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            gap: var(--padding);
+            padding: var(--padding);
+        }
+
+        .page>* {
+            /* cibler tout les enfants enfant de l'éléments de classe page */
+            background: lightgray;
+            padding: 1rem;
+            border: 1px solid gray;
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-wrap:wrap;
+            gap:  var(--padding);
+            /* contrecarrer les styles de page */
+            padding: 0px;
+            background: white;
+            border: none;
+        }
+
+        .main>* {
+            background: white;
+            padding: var(--padding);
+            border: 1px solid gray;
+        }
+
+
+        .header,
+        .footer {
+            font-size: 1.5em;
+            font-weight: bolder;
+        }
+
+        .aside {
+            width: 100px;
+        }
+
+        .content {
+            flex: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            Entête
+        </div>
+        <div class="main">
+            <div class="aside">
+                Contenu secondaire
+            </div>
+            <div class="content">
+                Contenu principal
+            </div>
+            <div class="aside">
+                Contenu secondaire
+            </div>
+        </div>
+        <div class="footer">
+            Pied de page
+        </div>
+    </div>
+</body>
+
+</html>

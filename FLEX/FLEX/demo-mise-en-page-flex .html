@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            /* définition de variables utilisées dans certaines classes */
+            --padding: 6px;
+            --border-radius: 10px;
+            --scroolbar-with: 14px;
+        }
+
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        .page {
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+            gap: var(--padding);
+            padding: var(--padding);
+            background: lightgray;
+        }
+
+        .page>* {
+            /* cibler tout les enfants enfant de l'éléments de classe page */
+            background: white;
+            padding: 1rem;
+            border: 1px solid gray;
+            border-radius: var(--border-radius);
+        }
+
+        .main {
+            flex: 1;
+            display: flex;
+            flex-wrap: wrap;
+            gap: var(--padding);
+            /* contrecarrer les styles de page */
+            padding: 0px;
+            background: white;
+            /** styles pour la barre de défilement **/
+            overflow-y: auto;
+        }
+
+        .main>* {
+            background: white;
+            padding: var(--padding);
+            border: 1px solid gray;
+            border-radius: var(--border-radius);
+        }
+
+        /*** classes pour l'apparence de la barre de défilement ***/
+        ::-webkit-scrollbar {
+            border-radius: var(--border-radius);
+            width: var(--scroolbar-with);
+        }
+
+        ::-webkit-scrollbar-track {
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+            border-radius: var(--border-radius);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            border-radius: var(--border-radius);
+            box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+        }
+
+        .header,
+        .footer {
+            font-size: 1.8em;
+            font-weight: bolder;
+            background: linear-gradient(90deg,white, yellow, darkorange);
+            color: darkorange;
+            padding: var(--padding);
+            text-align: left;
+        }
+
+        /**** classes en relation avec le contenu ****/
+
+        .boxContainer {
+            gap: 10px;
+            border: none;
+        }
+
+        .box {
+            flex: 1;
+            padding: var(--padding);
+            margin-bottom: var(--padding);
+        }
+
+        @media (min-width: 800px) {
+            .boxContainer {
+                display: flex;
+                gap: var(--padding);
+            }
+
+            .box {
+                flex: 1;
+                margin-bottom: 0px;
+            }
+        }
+
+        img {
+            width: 100%;
+        }
+
+        .imgBox {
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            aspect-ratio: 16/9;
+        }
+
+        .title {
+            font-weight: bold;
+            font-size: 2.2em;
+        }
+
+        .lightgreen {
+            background-color: lightgreen;
+        }
+
+        .lightblue {
+            background-color: lightblue;
+        }
+
+        .lightsalmon {
+            background-color: lightsalmon;
+        }
+
+        .burlywood {
+            background-color: burlywood;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="header">
+            Destinations vancances
+        </div>
+        <div class="main">
+            <div class="boxContainer">
+                <div class="box lightgreen">
+                    <div class="title">Montagne</div>
+                    <div class="imgBox" style="background-image: url(https://picsum.photos/id/684/600/400);"></div>
+                    Minim esse officia anim proident nisi adipisicing adipisicing id aute
+                    nisi. Id non nostrud amet duis excepteur id quis excepteur minim
+                    cupidatat. Duis irure dolor minim velit aliqua ullamco quis ullamco
+                    mollit. Enim reprehenderit proident ut quis mollit fugiat. Ullamco id
+                    amet dolor do exercitation eu. Aliqua occaecat elit labore incididunt
+                    non nostrud ex adipisicing non.
+                </div>
+                <div class="box lightsalmon">
+                    <div class="title">Aventure</div>
+                    <div class="imgBox" style="background-image: url(https://picsum.photos/id/642/600/400);"></div>
+                    Et enim fugiat consequat fugiat ad aliqua minim deserunt velit. Enim id
+                    eiusmod do aliqua sit. Pariatur ex enim sit ad ut laboris. Culpa laboris
+                    Lorem enim incididunt do culpa veniam quis dolor aliquip amet amet velit
+                    nulla. Ex eu laboris commodo officia ea deserunt elit.
+                </div>
+                <div class="box lightblue">
+                    <div class="title">Faune</div>
+                    <div class="imgBox" style="background-image: url(https://picsum.photos/id/1020/600/400);"></div>
+                    Et sint tempor ipsum ut laboris laborum aliquip. Irure est irure laborum
+                    nulla sit id do excepteur cillum esse adipisicing fugiat est cupidatat.
+                    Nisi cillum labore magna esse culpa commodo commodo irure adipisicing
+                    Lorem minim commodo cupidatat adipisicing. Est laborum culpa fugiat
+                    tempor sit amet qui esse aliquip. Nulla aliquip veniam do adipisicing
+                    eiusmod veniam fugiat nulla. Lorem velit ea labore fugiat nulla dolor
+                    eiusmod excepteur esse aute ex.
+                </div>
+                <div class="box burlywood">
+                    <div class="title">Tourisme</div>
+                    <div class="imgBox" style="background-image: url(https://picsum.photos/id/972/600/400);"></div>
+                    Ex qui Lorem culpa excepteur non exercitation quis ipsum esse mollit
+                    culpa elit Lorem ex. Eiusmod commodo mollit adipisicing occaecat nulla
+                    id exercitation occaecat consectetur ex enim. Ut minim sint proident
+                    esse excepteur pariatur ea amet commodo qui.
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            Vites! Faites vos réservations!
+        </div>
+    </div>
+</body>
+
+</html>

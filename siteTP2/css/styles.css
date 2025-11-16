@@ -46,8 +46,9 @@
              color: dodgerblue;
              border: none
          }
+
          .menuItem:hover {
-            color:black;
+             color: black;
          }
 
          .selectedMenuItem {
@@ -78,11 +79,15 @@
          .content {
              flex-grow: 1;
 
-            .iframe-container {
-                height: 1000px;
-                box-shadow: 2px 2px 5px black;
-            }
-         
+             .iframe-container {
+                 height: 1000px;
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+                 aspect-ratio: 16/9;
+                 box-shadow: 2px 2px 5px black;
+             }
+
              .bigImage {
                  background-position: center;
                  background-repeat: no-repeat;
@@ -154,6 +159,7 @@
  }
 
  @media (min-width:500px) {
+
      /*** classes pour l'apparence de la barre de défilement ***/
      ::-webkit-scrollbar {
          border-radius: var(--border-radius);

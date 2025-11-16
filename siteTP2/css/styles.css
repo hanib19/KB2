@@ -14,6 +14,7 @@
      /* 100% de la hauteur du viewport pour assurer la réactivité verticale */
      gap: var(--gap);
      padding: var(--gap);
+     font-family: sans-serif;
 
      .favicon {
          height: 32px;

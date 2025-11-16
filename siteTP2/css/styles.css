@@ -78,6 +78,11 @@
          .content {
              flex-grow: 1;
 
+            .iframe-container {
+                height: 400px;
+                box-shadow: 2px 2px 5px black;
+            }
+         
              .bigImage {
                  background-position: center;
                  background-repeat: no-repeat;

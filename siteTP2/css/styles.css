@@ -79,11 +79,17 @@
          .content {
              flex-grow: 1;
 
-             .bigImage, .iframe-container {
+             .bigImage {
                  background-position: center;
                  background-repeat: no-repeat;
                  background-size: cover;
                  aspect-ratio: 16/9;
+             }
+
+             .iframe-container {
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 background-size: cover;
              }
          }
 

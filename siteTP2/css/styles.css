@@ -123,6 +123,7 @@
          background: white;
          padding: var(--gap);
          border: 1px solid gray;
+         border-radius: 4px;
      }
  }
 

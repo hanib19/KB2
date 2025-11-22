@@ -82,8 +82,8 @@
 
              .image, 
              .iframe-container {
-                 height: 600px;
-                 width: 800px;
+                 height: auto;
+                 max-width: 100%;
                  display: flex;
                  background-position: center;
                  background-repeat: no-repeat;

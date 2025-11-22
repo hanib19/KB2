@@ -80,7 +80,14 @@
          .content {
              flex-grow: 1;
 
-             .image, 
+             .image {
+                 height: 800px;
+                 aspect-ratio: 16/9; 
+                 background-position: center;
+                 background-repeat: no-repeat;
+                 background-size: cover;
+             }
+
              .iframe-container {
                  height: 800px;
                  aspect-ratio: 16/9; 

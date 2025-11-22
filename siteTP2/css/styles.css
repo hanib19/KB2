@@ -80,13 +80,7 @@
          .content {
              flex-grow: 1;
 
-             .image {
-                height: 600px;
-                 background-position: center;
-                 background-repeat: no-repeat;
-                 background-size: cover;
-             }
-
+             .image, 
              .iframe-container {
                  height: 500px;
                  background-position: center;

@@ -82,7 +82,8 @@
 
              .image, 
              .iframe-container {
-                 height: 500px;
+                 height: 800px;
+                 width: 1200px;
                  background-position: center;
                  background-repeat: no-repeat;
                  background-size: cover;

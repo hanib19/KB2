@@ -84,7 +84,6 @@
              .iframe-container {
                  height: 800px;
                  aspect-ratio: 16/9; 
-                 display: flex;
                  background-position: center;
                  background-repeat: no-repeat;
                  background-size: cover;

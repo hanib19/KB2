@@ -89,8 +89,9 @@
              }
 
              .iframe-container {
-                 height: 400px;
-                 width: 600px;
+                 height: 200px;
+                 width: 400px;
+                 margin: 0 auto;
                  background-position: center;
                  background-repeat: no-repeat;
                  background-size: cover;

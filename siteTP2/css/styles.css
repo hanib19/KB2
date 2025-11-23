@@ -89,15 +89,12 @@
              }
 
              .auteur-photo {
-                 grid-area: photo;
                  width: 200px;
                  height: 200px;
                  border-radius: 50%;
-                 display: grid;
                  background-color: #f0f0f0;
                  border: 6px solid grey;
-                 margin: 0 auto;
-                 position: relative;
+                 margin-left: 0 auto;
                  background-size: cover;
                  background-position: left;
              }

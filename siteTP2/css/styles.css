@@ -88,6 +88,20 @@
                  background-size: cover;
              }
 
+             .auteur-photo {
+                 grid-area: photo;
+                 width: 200px;
+                 height: 200px;
+                 border-radius: 50%;
+                 display: grid;
+                 background-color: #f0f0f0;
+                 border: 6px solid grey;
+                 margin: 0 auto;
+                 position: relative;
+                 background-size: cover;
+                 background-position: left;
+             }
+
              .iframe-container {
                  height: 200px;
                  width: 400px;

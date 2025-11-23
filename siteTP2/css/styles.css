@@ -94,9 +94,9 @@
                  border-radius: 50%;
                  background-color: #f0f0f0;
                  border: 6px solid grey;
-                 margin-left: 0 auto;
+                 margin: 0 auto;
                  background-size: cover;
-                 background-position: left;
+                 background-position: right center;
              }
 
              .iframe-container {

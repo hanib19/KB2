@@ -94,7 +94,8 @@
                  border-radius: 50%;
                  background-color: #f0f0f0;
                  border: 6px solid grey;
-                 margin: 0 auto;
+                 margin-left: auto;
+                 margin-top: -150px;
                  background-size: cover;
                  background-position: right center;
              }

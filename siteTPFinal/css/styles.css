@@ -1,3 +1,50 @@
+:root {
+    --gap: 5px;
+    --trans-speed: 0.5s;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.page {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: auto;
+
+    &>* {
+        padding: var(--gap);
+        margin: var(--gap);
+    }
+
+    .header {
+        display: inline;
+    }
+
+    .footer {
+        display: inline;
+    }
+
+    .main {
+        flex: auto;
+        min-height: 5vh;
+    }
+
+    .scroll {
+        overflow-y: auto;
+    }
+}
+
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .headerMenu {
     display: grid;
     grid-template-columns: 4vw auto;
@@ -12,7 +59,7 @@
         cursor: pointer;
         color: black;
         border-radius: 5px;
-        /* top/bottom left/rigth */
+        /* top/bottom left/right */
         padding: 3px 6px;
         /* ellipsis*/
         white-space: nowrap;
@@ -42,23 +89,6 @@
     background-repeat: no-repeat;
     width: 3.75vw;
     height: 3.75vw;
-}
-
-@media (min-width : 1100px) {
-    .menu {
-        .menuItem {
-            font-size: 33px;
-        }
-    }
-
-    .headerMenu {
-        grid-template-columns: 45px auto;
-    }
-
-    .siteIcon {
-        width: 40px;
-        height: 40px;
-    }
 }
 
 :root {
@@ -115,5 +145,6 @@ details {
         scale: 1.05;
         transition: var(--trans-speed);
     }
+
     transition: var(--trans-speed);
 }

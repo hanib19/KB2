@@ -111,10 +111,10 @@
 /* les affaires du calendrier! */
 
 .calendar {
+    flex-grow: 1;
     display: flex;
     flex-wrap: wrap;        /* permet le retour à la ligne */
     gap: 1rem;              /* espace entre les mois */
-    justify-content: center; /* optionnel */
 }
 
 

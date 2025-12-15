@@ -39,6 +39,7 @@
     }
 }
 
+
 .ellipsis {
     white-space: nowrap;
     overflow: hidden;
@@ -110,47 +111,47 @@
 /* les affaires du calendrier! */
 
 .month-card {
-  width: 280px;
-  padding: 1rem;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  background-color: white;
+    width: 280px;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background-color: white;
 
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .month-card h2 {
-  text-align: center;
-  margin-bottom: 0.5rem;
-  font-family: Arial, sans-serif;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-family: Arial, sans-serif;
 }
 
 .days {
-  display: grid;
-  grid-template-columns: repeat(7, 1fr);
-  gap: 0.3rem;
-  text-align: center;
-  font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 0.3rem;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 .day-name {
-  font-weight: bold;
-  font-size: 0.75rem;
-  font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 0.75rem;
+    font-family: Arial, sans-serif;
 }
 
 .day {
-  padding: 0.4rem 0;
-  border-radius: 50%;
+    padding: 0.4rem 0;
+    border-radius: 50%;
 }
 
 .holiday {
-  color: orange;
-  font-weight: bold;
-  cursor: pointer;
+    color: orange;
+    font-weight: bold;
+    cursor: pointer;
 }
 
 .empty {
-  visibility: hidden;
+    visibility: hidden;
 }

@@ -110,6 +110,14 @@
 
 /* les affaires du calendrier! */
 
+.calendar {
+    display: flex;
+    flex-wrap: wrap;        /* permet le retour à la ligne */
+    gap: 1rem;              /* espace entre les mois */
+    justify-content: center; /* optionnel */
+}
+
+
 .month-card {
     width: 280px;
     padding: 1rem;

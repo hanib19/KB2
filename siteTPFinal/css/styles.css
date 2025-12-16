@@ -92,11 +92,19 @@
     height: 3.75vw;
 }
 
+.mosaic {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+    gap: 12px;
+}
+
 .imageFrame {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     aspect-ratio: 1/1;
+
+    
     cursor: pointer;
     border-radius: 6px;
 
@@ -111,18 +119,19 @@
 /* les affaires du calendrier! */
 
 .calendar {
-    flex-grow: 1;
-    display: flex;
-    flex-wrap: wrap;        /* permet le retour à la ligne */
-    gap: 1rem;              /* espace entre les mois */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 1rem;
+    overflow-y: auto;
 }
 
 .month-card {
-    width: 280px;
     padding: 1rem;
     border: 1px solid #ccc;
     border-radius: 12px;
     background-color: white;
+    display: flex;
+    flex-wrap: wrap;
 
     display: flex;
     flex-direction: column;
